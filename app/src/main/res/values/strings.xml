@@ -23,6 +23,6 @@
     <string name="lowRoll">Lowest Roll</string>
     <string name="avgRoll">Average Roll</string>
     <string name="rolls">Rolls</string>
-
+    <string name="reroll100">X100</string>
 
 </resources>

@@ -19,7 +19,7 @@
             android:text="@string/value"
             android:textSize="30sp"
             android:gravity="center"
-            android:layout_margin="35dp"
+            android:layout_margin="25dp"
             />
         <TextView
             android:id="@+id/dice_value"
@@ -27,8 +27,8 @@
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:gravity="center"
-            android:layout_marginTop="35dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
             android:text="@string/placeholder"
             />
         <LinearLayout
@@ -56,7 +56,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="25dp"
             >
             <TextView
                 android:layout_width="0dp"
@@ -82,7 +82,7 @@
             android:textSize="20sp"
             android:layout_marginRight="60dp"
             android:layout_marginLeft="60dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/see_results"
             android:gravity="center"
             android:layout_gravity="center_horizontal"
@@ -96,27 +96,46 @@
             android:textSize="20sp"
             android:layout_marginRight="60dp"
             android:layout_marginLeft="60dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/see_graph"
             android:gravity="center"
             android:layout_gravity="center_horizontal"
             android:background="@color/colorAccent"
             android:onClick="seeGraphClicked"
             />
-        <Button
-            android:id="@+id/reroll"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:orientation="horizontal"
             android:layout_marginRight="60dp"
             android:layout_marginLeft="60dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/reroll"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="@string/reroll"
             android:gravity="center"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="left"
             android:background="@color/colorAccent"
             android:onClick="reroll"
             />
+            <Button
+                android:id="@+id/reroll100"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="right"
+                android:text="@string/reroll100"
+                android:background="@color/colorSecondary"
+                android:onClick="reroll100"
+                />
+
+        </LinearLayout>
+
         <Button
             android:id="@+id/home"
             android:layout_width="match_parent"

@@ -45,10 +45,11 @@ class GraphActivity : AppCompatActivity() {
             series.appendData(DataPoint(b, sumList[a]),true, 1000000000)
         }
         //Graph Options
+        var minimumVal = rolls.numDice.toDouble() - 0.5
         series.setSpacing(10)
         series.setValueDependentColor { getResources().getColor(R.color.colorGraph) }
         graph.addSeries(series)
-        graph.viewport.setMinX(0.5)
+        graph.viewport.setMinX(minimumVal)
         var maxDouble: Double = max.toDouble()+0.5
         graph.viewport.setMaxX(maxDouble)
         graph.viewport.isScalable = true

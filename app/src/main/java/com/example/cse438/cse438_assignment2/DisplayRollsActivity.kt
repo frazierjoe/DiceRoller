@@ -51,6 +51,13 @@ class DisplayRollsActivity : AppCompatActivity(){
         rollDice(rolls)
         updateValue(rolls)
     }
+    fun reroll100(view: View){
+        var rolls: Rolls = intent.getParcelableExtra(EXTRA_ROLLS)
+        for(x in 0..100){
+            rollDice(rolls)
+        }
+        updateValue(rolls)
+    }
 
 
     fun homeClicked(view: View){ //Return to main activity
