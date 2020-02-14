@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">cse438-assignment2</string>
+    <string name="app_name">Dice Roller</string>
+    <string name="title">Dice Roll!</string>
+    <string name="enter_num_dice">Number of Dice</string>
+    <string name="enter_max_value">Max Dice Value</string>
+    <string name="roll_btn_error">Please enter a valid number</string>
+    <string name="roll">Roll</string>
+    <string name="clear">Clear</string>
+    <string name="clearClickedMessage">Previous rolls have been cleared.</string>
+    <string name="value">Value</string>
+    <string name="see_results">See Results</string>
+    <string name="see_graph">See Graph</string>
+    <string name="reroll">Reroll</string>
+    <string name="home">Home</string>
+    <string name="num_dice">Number of Dice: </string>
+    <string name="max_val">Max Value: </string>
+    <string name="placeholder">Placeholder</string>
+    <string name="cancel">Cancel</string>
+    <string name="highest">Highest</string>
+    <string name="lowest">Lowest</string>
+    <string name="average">Average</string>
+    <string name="highRoll">Highest Roll</string>
+    <string name="lowRoll">Lowest Roll</string>
+    <string name="avgRoll">Average Roll</string>
+    <string name="rolls">Rolls</string>
+
+
 </resources>
