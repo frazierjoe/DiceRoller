@@ -1,7 +1,10 @@
 In this file you should include:
 
 Any information you think we should know about your submission
-* Everything works and should be clear.
+
+Everything works and should be clear.
+*NOTE - high numbers of dice/values/reroll clicks may cause the app to crash.
+
 
 
 
