@@ -26,6 +26,7 @@ class GraphActivity : AppCompatActivity() {
         var graph = findViewById<GraphView>(R.id.graph)
         var series = BarGraphSeries<DataPoint>()
         var max = rolls.maxVal * rolls.numDice
+
         var sumList = MutableList(max+1) {0.0} //A list containing the number of times each dice value was rolled
         var rollList = rolls.rollList
         var size: Int = rollList.size - 1
