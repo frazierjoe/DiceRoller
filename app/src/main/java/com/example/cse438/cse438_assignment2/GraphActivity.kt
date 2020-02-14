@@ -31,7 +31,7 @@ class GraphActivity : AppCompatActivity() {
         var size: Int = rollList.size - 1
         var temp: Int
         var tempSum = 0
-        for(z in 0..size){ //Loop through rolls and add up the number of times each value was rolled
+        for(z in 0..size){ //Loop through rolls and add up the number of times each sum was rolled
             temp = rollList[z]
             tempSum+=temp
             if(z % rolls.numDice == rolls.numDice-1) {
