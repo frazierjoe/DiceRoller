@@ -25,14 +25,19 @@ class GraphActivity : AppCompatActivity() {
     fun createGraph(rolls: Rolls) {
         var graph = findViewById<GraphView>(R.id.graph)
         var series = BarGraphSeries<DataPoint>()
-        var max = rolls.maxVal
+        var max = rolls.maxVal * rolls.numDice
         var sumList = MutableList(max+1) {0.0} //A list containing the number of times each dice value was rolled
         var rollList = rolls.rollList
         var size: Int = rollList.size - 1
         var temp: Int
+        var tempSum = 0
         for(z in 0..size){ //Loop through rolls and add up the number of times each value was rolled
             temp = rollList[z]
-            sumList[temp]+=1.0
+            tempSum+=temp
+            if(z % rolls.numDice == rolls.numDice-1) {
+                sumList[tempSum] += 1.0
+                tempSum=0
+            }
         }
         var b: Double
         for(a in 1..max){ //Create data points for each value
